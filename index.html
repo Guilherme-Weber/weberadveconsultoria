@@ -1,16 +1,377 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <title>Redirecionando...</title>
-    <!-- Esta meta tag redireciona para a sua página inicial correta -->
-    <meta http-equiv="refresh" content="0; url=./main.html">
-    <script type="text/javascript">
-        // Redirecionamento via JavaScript como alternativa
-        window.location.href = "./main.html";
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francieli Weber | Advocacia e Consultoria Jurídica</title>
+    <meta name="description" content="Francieli dos Santos da Luz Weber — Advogada (OAB/PR 99.852), consultora e correspondente jurídica. Direito Civil, Família, Consumidor, mediação e defensoria dativa no Paraná.">
+    <meta name="theme-color" content="#15281f">
+    <link rel="canonical" href="https://guilherme-weber.github.io/weberadveconsultoria/">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+
+    <!-- Pré-visualização ao compartilhar o link (WhatsApp, LinkedIn, Facebook...).
+         Se o site ganhar um domínio próprio, troque o endereço nas linhas abaixo. -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Francieli Weber — Advocacia">
+    <meta property="og:title" content="Francieli Weber | Advocacia e Consultoria Jurídica">
+    <meta property="og:description" content="Advogada OAB/PR 99.852 — Direito Civil, Família, Consumidor, mediação e defensoria dativa.">
+    <meta property="og:url" content="https://guilherme-weber.github.io/weberadveconsultoria/">
+    <meta property="og:image" content="https://guilherme-weber.github.io/weberadveconsultoria/img/compartilhar.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Dados estruturados para o Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Attorney",
+        "name": "Francieli dos Santos da Luz Weber",
+        "description": "Advocacia e Consultoria Jurídica — OAB/PR 99.852",
+        "url": "https://guilherme-weber.github.io/weberadveconsultoria/",
+        "image": "https://guilherme-weber.github.io/weberadveconsultoria/img/compartilhar.jpg",
+        "telephone": "+55 41 99709-8729",
+        "email": "fweber.adv@gmail.com",
+        "areaServed": ["Araucária", "Lapa", "Fazenda Rio Grande", "Campo Largo", "Paraná, Brasil"],
+        "knowsAbout": ["Direito Civil", "Direito de Família", "Direito do Consumidor", "Mediação", "Defensoria Dativa"],
+        "sameAs": ["https://www.instagram.com/fran.weber/", "https://www.linkedin.com/in/fweberadv/"]
+    }
     </script>
+
+    <script>document.documentElement.classList.add('js');</script>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="preload" as="image" href="./img/fundo-biblioteca.jpg">
+
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
-    <p>Se você não for redirecionado automaticamente, <a href="./main.html">clique aqui</a>.</p>
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo</a>
+
+    <!-- Cabeçalho e navegação -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#home" class="block" aria-label="Início">
+                <img src="./img/monograma-marfim.png" alt="Francieli Weber — Advocacia" width="710" height="236" class="h-10 md:h-11 w-auto">
+            </a>
+            <nav class="hidden lg:flex items-center space-x-8 text-xs font-bold tracking-[0.2em]" aria-label="Principal">
+                <a href="#home" class="nav-link">INÍCIO</a>
+                <a href="#sobre" class="nav-link">SOBRE</a>
+                <a href="#areasdeatuacao" class="nav-link">ÁREAS DE ATUAÇÃO</a>
+                <a href="#carreira" class="nav-link">CARREIRA</a>
+                <a href="#conteudos" class="nav-link">CONTEÚDOS</a>
+                <a href="#contato" class="nav-link">CONTATO</a>
+            </nav>
+            <button id="mobile-menu-button" class="lg:hidden text-[#e9e2d2] p-2 -mr-2" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+                <i class="fa-solid fa-bars text-xl" aria-hidden="true"></i>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden lg:hidden border-t border-white/10" style="background: var(--forest-900);" aria-label="Menu móvel">
+            <a href="#home" class="block py-3 px-6 text-sm text-[#e9e2d2] hover:bg-white/5">Início</a>
+            <a href="#sobre" class="block py-3 px-6 text-sm text-[#e9e2d2] hover:bg-white/5">Sobre</a>
+            <a href="#areasdeatuacao" class="block py-3 px-6 text-sm text-[#e9e2d2] hover:bg-white/5">Áreas de Atuação</a>
+            <a href="#carreira" class="block py-3 px-6 text-sm text-[#e9e2d2] hover:bg-white/5">Carreira</a>
+            <a href="#conteudos" class="block py-3 px-6 text-sm text-[#e9e2d2] hover:bg-white/5">Conteúdos</a>
+            <a href="#contato" class="block py-3 px-6 text-sm text-[#e9e2d2] hover:bg-white/5">Contato</a>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal">
+        <!-- Início -->
+        <section id="home" class="section-dark photo-band foto-biblioteca min-h-screen flex items-center pt-28 pb-20">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-5 gap-14 items-center">
+                    <div class="md:col-span-3 text-center md:text-left reveal">
+                        <img src="./img/monograma-ouro.png" alt="" width="710" height="236" class="hero-monogram mx-auto md:mx-0 mb-6">
+                        <p class="eyebrow mb-5">Advocacia &amp; Consultoria Jurídica · OAB/PR 99.852</p>
+                        <h1 class="text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] mb-6" style="color: #f7f3ea;">Francieli dos Santos da Luz Weber</h1>
+                        <p class="hero-tags text-base md:text-lg text-[#cfc6b3] max-w-xl mx-auto md:mx-0 leading-relaxed font-light">
+                            <span>Advogada</span><span>Consultora Jurídica</span><span>Correspondente Jurídica</span><span>Advocacia Cível</span><span>Gestão de Conflitos</span><span>Mediação</span><span>Defensora Dativa</span>
+                        </p>
+                        <div class="mt-10 flex flex-wrap justify-center md:justify-start gap-4">
+                            <a href="#contato" class="btn-gold py-3 px-8 rounded-sm font-bold text-sm tracking-widest uppercase">Agende uma conversa</a>
+                            <a href="#areasdeatuacao" class="btn-outline py-3 px-8 rounded-sm font-bold text-sm tracking-widest uppercase">Áreas de atuação</a>
+                        </div>
+                    </div>
+                    <div class="md:col-span-2 flex justify-center reveal" style="transition-delay: 200ms;">
+                        <div class="relative w-64 h-80 md:w-72 md:h-96">
+                            <div class="portrait-frame"></div>
+                            <img src="./img/perfil.jpg" alt="Foto de Francieli Weber" width="600" height="600" fetchpriority="high" class="portrait relative w-full h-full object-cover shadow-2xl">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre -->
+        <section id="sobre" class="section-dark photo-band foto-justica py-28 md:py-40">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto reveal">
+                    <p class="eyebrow mb-3">Quem sou</p>
+                    <h2 class="text-4xl md:text-5xl font-semibold mb-5">Sobre Mim</h2>
+                    <div class="ornament mb-8"><img src="./img/monograma-ouro.png" alt="" width="710" height="236" class="ornament-logo"></div>
+                    <p class="font-heading italic text-2xl md:text-3xl leading-snug" style="color: #efe8da;">
+                        Com anos de experiência, estou pronta para oferecer soluções jurídicas eficazes e personalizadas. Minha missão é buscar a justiça e levar tranquilidade a cada cliente, com ética, dedicação e transparência.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Áreas de atuação (fundo sólido) -->
+        <section id="areasdeatuacao" class="section-dark watermark py-24 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 reveal">
+                    <p class="eyebrow mb-3">Como posso ajudar</p>
+                    <h2 class="text-4xl md:text-5xl font-semibold mb-5">Áreas de Atuação</h2>
+                    <div class="ornament"><img src="./img/monograma-ouro.png" alt="" width="710" height="236" class="ornament-logo"></div>
+                </div>
+                <div class="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card card-hover p-9 text-center reveal" style="transition-delay: 100ms;">
+                        <div class="card-icon"><i class="fa-solid fa-file-contract text-2xl" aria-hidden="true"></i></div>
+                        <h3 class="text-2xl font-semibold mb-3">Direito Civil</h3>
+                        <p class="text-sm leading-relaxed">Atuação especializada em questões civis, com foco na proteção dos seus direitos.</p>
+                    </div>
+                    <div class="card card-hover p-9 text-center reveal" style="transition-delay: 200ms;">
+                        <div class="card-icon"><i class="fa-solid fa-people-roof text-2xl" aria-hidden="true"></i></div>
+                        <h3 class="text-2xl font-semibold mb-3">Direito de Família</h3>
+                        <p class="text-sm leading-relaxed">Apoio jurídico em questões familiares, buscando sempre a melhor solução para todos os envolvidos.</p>
+                    </div>
+                    <div class="card card-hover p-9 text-center reveal" style="transition-delay: 300ms;">
+                        <div class="card-icon"><i class="fa-solid fa-cart-shopping text-2xl" aria-hidden="true"></i></div>
+                        <h3 class="text-2xl font-semibold mb-3">Direito do Consumidor</h3>
+                        <p class="text-sm leading-relaxed">Defesa dos direitos do consumidor, para que suas reclamações sejam ouvidas e tratadas como merecem.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carreira (do mais recente para o mais antigo) -->
+        <section id="carreira" class="section-dark photo-band foto-martelo py-24 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 reveal">
+                    <p class="eyebrow mb-3">Experiência</p>
+                    <h2 class="text-4xl md:text-5xl font-semibold mb-5">Trajetória Profissional</h2>
+                    <div class="ornament"><img src="./img/monograma-ouro.png" alt="" width="710" height="236" class="ornament-logo"></div>
+                </div>
+
+                <ol class="timeline max-w-3xl mx-auto space-y-10">
+                    <li class="flex items-start gap-6 reveal">
+                        <div class="tl-dot"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></div>
+                        <div class="card p-6 w-full">
+                            <p class="tl-year mb-1">2025 — PRESENTE</p>
+                            <h3 class="text-2xl font-semibold">Presidente da Comissão de Advocacia Dativa</h3>
+                            <p class="italic text-sm mb-2">OAB/PR — Ordem dos Advogados do Brasil, Seção do Paraná</p>
+                            <p class="leading-relaxed">Peticionamento, realização de audiências, mutirões, plantões e acompanhamentos processuais mediante intimações.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-6 reveal">
+                        <div class="tl-dot"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></div>
+                        <div class="card p-6 w-full">
+                            <p class="tl-year mb-1">2023 — 2024</p>
+                            <h3 class="text-2xl font-semibold">Advogada Plena</h3>
+                            <p class="italic text-sm mb-2">Custódio Advocacia e Consultoria</p>
+                            <p class="leading-relaxed">Atuação nas áreas cível, criminal e trabalhista, da fase inicial à recursal, com elaboração de peças de baixa, média e alta complexidade.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-6 reveal">
+                        <div class="tl-dot"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></div>
+                        <div class="card p-6 w-full">
+                            <p class="tl-year mb-1">2020 — PRESENTE</p>
+                            <h3 class="text-2xl font-semibold">Defensora Dativa</h3>
+                            <p class="italic text-sm mb-2">OAB/PR — Ordem dos Advogados do Brasil, Seção do Paraná</p>
+                            <p class="leading-relaxed">Peticionamento, realização de audiências, mutirões, plantões e acompanhamentos processuais mediante intimações.</p>
+                            <p class="leading-relaxed mt-2">Atuação nas áreas de Direito Criminal e Direito de Família, incluindo audiências de mediação junto ao Cejusc.</p>
+                            <p class="leading-relaxed mt-2">Atualmente atuo nas comarcas de Araucária, Lapa e Fazenda Rio Grande, e já atuei também em Campo Largo.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-6 reveal">
+                        <div class="tl-dot"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></div>
+                        <div class="card p-6 w-full">
+                            <p class="tl-year mb-1">2019 — PRESENTE</p>
+                            <h3 class="text-2xl font-semibold">Advogada</h3>
+                            <p class="italic text-sm mb-2">Autônoma</p>
+                            <p class="leading-relaxed">Atuante nas áreas de Direito Civil, Criminal e Previdenciário, com elaboração de contratos, pareceres e assessoria jurídica.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-6 reveal">
+                        <div class="tl-dot"><i class="fa-solid fa-landmark" aria-hidden="true"></i></div>
+                        <div class="card p-6 w-full">
+                            <p class="tl-year mb-1">2017 — 2018</p>
+                            <h3 class="text-2xl font-semibold">Estagiária de Direito</h3>
+                            <p class="italic text-sm mb-2">Tribunal Regional do Trabalho da Nona Região</p>
+                            <p class="leading-relaxed">Remessa de autos ao arquivo, controle e verificação de ARs (avisos de recebimento) de intimações para audiências e consultas ao Bacen, Serasa e SPC.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-6 reveal">
+                        <div class="tl-dot"><i class="fa-solid fa-credit-card" aria-hidden="true"></i></div>
+                        <div class="card p-6 w-full">
+                            <p class="tl-year mb-1">2016 — 2017</p>
+                            <h3 class="text-2xl font-semibold">Auxiliar Administrativa — Setor Financeiro</h3>
+                            <p class="italic text-sm mb-2">Blindafort Montagem e Soldagem Ltda.</p>
+                            <p class="leading-relaxed">Atividades de apoio financeiro: contas a pagar, lançamento de notas fiscais, controle de pedidos e acompanhamento das licitações de vendas para os Correios e a Caixa Econômica Federal.</p>
+                            <p class="leading-relaxed mt-2">Acompanhamento de processos trabalhistas junto ao escritório de advocacia terceirizado.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-6 reveal">
+                        <div class="tl-dot"><i class="fa-solid fa-house" aria-hidden="true"></i></div>
+                        <div class="card p-6 w-full">
+                            <p class="tl-year mb-1">2010 — 2014</p>
+                            <h3 class="text-2xl font-semibold">Auxiliar Administrativa — Setor de Locação</h3>
+                            <p class="italic text-sm mb-2">Imobiliária Barracão</p>
+                            <p class="leading-relaxed">Iniciei no setor financeiro, em contas a pagar e a receber, e depois fui transferida para o setor de locação de imóveis, onde realizava a análise documental e a elaboração de contratos de locação.</p>
+                            <p class="leading-relaxed mt-2">Esporadicamente, participava de plantões de vendas e dos Feirões da Caixa, comercializando empreendimentos parceiros.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-6 reveal">
+                        <div class="tl-dot"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></div>
+                        <div class="card p-6 w-full">
+                            <p class="tl-year mb-1">2010 — 2014</p>
+                            <h3 class="text-2xl font-semibold">Assistente Jurídica</h3>
+                            <p class="italic text-sm mb-2">Belafronte Advocacia</p>
+                            <p class="leading-relaxed">Verificação e acompanhamento de processos.</p>
+                            <p class="leading-relaxed mt-2">Atendimento a clientes, elaboração de relatórios e cálculos simples, organização de arquivo, operação do sistema CPJ e apoio geral às atividades jurídicas.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Conteúdos (fundo sólido): vídeos do YouTube e publicações de redes sociais.
+             Os itens são configurados em data/conteudos.json (editável pelo painel Pages CMS) -->
+        <section id="conteudos" class="section-dark py-24 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 reveal">
+                    <p class="eyebrow mb-3">Informação jurídica</p>
+                    <h2 class="text-4xl md:text-5xl font-semibold mb-5">Conteúdos</h2>
+                    <div class="ornament"><img src="./img/monograma-ouro.png" alt="" width="710" height="236" class="ornament-logo"></div>
+                </div>
+
+                <div id="bloco-videos" class="max-w-6xl mx-auto mb-16 hidden">
+                    <h3 class="on-dark text-2xl font-semibold mb-6 flex items-center gap-3"><i class="fa-brands fa-youtube text-[var(--gold)]" aria-hidden="true"></i> Vídeos</h3>
+                    <div id="lista-videos" class="grid md:grid-cols-2 gap-8"></div>
+                </div>
+
+                <div id="bloco-redes" class="max-w-6xl mx-auto hidden">
+                    <h3 class="on-dark text-2xl font-semibold mb-6 flex items-center gap-3"><i class="fa-solid fa-share-nodes text-[var(--gold)]" aria-hidden="true"></i> Nas redes sociais</h3>
+                    <div id="lista-redes" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 items-start"></div>
+                </div>
+
+                <div id="conteudos-vazio" class="max-w-xl mx-auto text-center card p-10 hidden">
+                    <p class="font-heading italic text-2xl" style="color: var(--forest-700);">Novos conteúdos em breve.</p>
+                    <p class="mt-2 text-sm">Enquanto isso, acompanhe as publicações no
+                        <a href="https://www.instagram.com/fran.weber/" target="_blank" rel="noopener noreferrer" class="link-gold">Instagram</a> e no
+                        <a href="https://www.linkedin.com/in/fweberadv/" target="_blank" rel="noopener noreferrer" class="link-gold">LinkedIn</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato" class="section-dark photo-band foto-tribunal py-24 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 reveal">
+                    <p class="eyebrow mb-3">Fale comigo</p>
+                    <h2 class="text-4xl md:text-5xl font-semibold mb-5">Contato</h2>
+                    <div class="ornament"><img src="./img/monograma-ouro.png" alt="" width="710" height="236" class="ornament-logo"></div>
+                </div>
+                <div class="max-w-6xl mx-auto grid lg:grid-cols-5 gap-8 items-start">
+                    <!-- Canais diretos -->
+                    <div class="lg:col-span-2 grid sm:grid-cols-2 lg:grid-cols-1 gap-4">
+                        <a href="https://api.whatsapp.com/send/?phone=5541997098729&text=Ol%C3%A1%21+Tenho+interesse+nos+seus+servi%C3%A7os+jur%C3%ADdicos.+Poderia+me+passar+mais+informa%C3%A7%C3%B5es%3F&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="card contact-link reveal">
+                            <span class="card-icon contact-icon"><i class="fa-brands fa-whatsapp text-xl" aria-hidden="true"></i></span>
+                            <span><span class="block font-heading text-xl font-semibold text-[var(--ink)]">WhatsApp</span><span class="text-sm">(41) 99709-8729</span></span>
+                        </a>
+                        <a href="mailto:fweber.adv@gmail.com" class="card contact-link reveal">
+                            <span class="card-icon contact-icon"><i class="fa-solid fa-envelope text-xl" aria-hidden="true"></i></span>
+                            <span class="min-w-0"><span class="block font-heading text-xl font-semibold text-[var(--ink)]">E-mail</span><span class="text-sm break-all">fweber.adv@gmail.com</span></span>
+                        </a>
+                        <a href="https://www.instagram.com/fran.weber/" target="_blank" rel="noopener noreferrer" class="card contact-link reveal">
+                            <span class="card-icon contact-icon"><i class="fa-brands fa-instagram text-xl" aria-hidden="true"></i></span>
+                            <span><span class="block font-heading text-xl font-semibold text-[var(--ink)]">Instagram</span><span class="text-sm">@fran.weber</span></span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/fweberadv/" target="_blank" rel="noopener noreferrer" class="card contact-link reveal">
+                            <span class="card-icon contact-icon"><i class="fa-brands fa-linkedin-in text-xl" aria-hidden="true"></i></span>
+                            <span><span class="block font-heading text-xl font-semibold text-[var(--ink)]">LinkedIn</span><span class="text-sm">Francieli S. L. Weber</span></span>
+                        </a>
+                    </div>
+
+                    <!-- Formulário de contato por e-mail (enviado via FormSubmit para fweber.adv@gmail.com) -->
+                    <form id="form-contato" class="lg:col-span-3 card p-7 md:p-9 reveal" action="https://formsubmit.co/fweber.adv@gmail.com" method="POST">
+                        <h3 class="text-3xl font-semibold mb-1">Envie uma mensagem</h3>
+                        <p class="text-sm mb-6">Retorno pelo e-mail ou telefone informado. Campos com * são obrigatórios.</p>
+
+                        <input type="hidden" name="_subject" value="Novo contato pelo site — Francieli Weber Advocacia">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://guilherme-weber.github.io/weberadveconsultoria/#contato">
+                        <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <label class="field">
+                                <span>Nome *</span>
+                                <input type="text" name="nome" required autocomplete="name" maxlength="120">
+                            </label>
+                            <label class="field">
+                                <span>Telefone / WhatsApp</span>
+                                <input type="tel" name="telefone" autocomplete="tel" maxlength="30" placeholder="(41) 90000-0000">
+                            </label>
+                            <label class="field sm:col-span-2">
+                                <span>E-mail *</span>
+                                <input type="email" name="email" required autocomplete="email" maxlength="160">
+                            </label>
+                            <label class="field sm:col-span-2">
+                                <span>Assunto</span>
+                                <select name="assunto">
+                                    <option>Direito Civil</option>
+                                    <option>Direito de Família</option>
+                                    <option>Direito do Consumidor</option>
+                                    <option>Mediação / Gestão de Conflitos</option>
+                                    <option>Correspondente Jurídica</option>
+                                    <option>Outro assunto</option>
+                                </select>
+                            </label>
+                            <label class="field sm:col-span-2">
+                                <span>Mensagem *</span>
+                                <textarea name="mensagem" rows="5" required maxlength="4000"></textarea>
+                            </label>
+                        </div>
+
+                        <label class="flex items-start gap-3 text-sm mt-5">
+                            <input type="checkbox" name="consentimento" value="Sim" required class="mt-1 accent-[var(--forest-700)]">
+                            <span>Autorizo o uso dos meus dados apenas para retorno deste contato, conforme a LGPD.</span>
+                        </label>
+
+                        <button type="submit" class="btn-gold w-full sm:w-auto mt-6 py-3 px-8 rounded-sm font-bold text-sm tracking-widest uppercase">
+                            <i class="fa-solid fa-paper-plane mr-2" aria-hidden="true"></i>Enviar mensagem
+                        </button>
+                        <p id="form-status" class="text-sm mt-4 hidden" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="section-dark" style="background-color: var(--forest-900);">
+        <div class="container mx-auto py-12 px-6 text-center">
+            <img src="./img/logo-marfim.png" alt="Francieli Weber — Advocacia e Consultoria Jurídica — OAB/PR 99.852" width="735" height="438" loading="lazy" class="h-28 md:h-32 w-auto mx-auto mb-6 opacity-90">
+            <div class="flex justify-center gap-6 text-xl mb-6">
+                <a href="https://api.whatsapp.com/send/?phone=5541997098729" target="_blank" rel="noopener noreferrer" class="text-[var(--gold-light)] hover:text-white transition-colors" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/fran.weber/" target="_blank" rel="noopener noreferrer" class="text-[var(--gold-light)] hover:text-white transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/fweberadv/" target="_blank" rel="noopener noreferrer" class="text-[var(--gold-light)] hover:text-white transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                <a href="mailto:fweber.adv@gmail.com" class="text-[var(--gold-light)] hover:text-white transition-colors" aria-label="E-mail"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+            </div>
+            <p class="text-sm text-[#cfc6b3]">&copy; <span id="year">2025</span> Francieli dos Santos da Luz Weber · OAB/PR 99.852. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botão flutuante do WhatsApp -->
+    <a href="https://api.whatsapp.com/send/?phone=5541997098729&text=Ol%C3%A1%21+Tenho+interesse+nos+seus+servi%C3%A7os+jur%C3%ADdicos.+Poderia+me+passar+mais+informa%C3%A7%C3%B5es%3F&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Conversar pelo WhatsApp">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <script src="./js/site.js"></script>
 </body>
 </html>

@@ -1,0 +1,62 @@
+# Configuração do painel de edição (Pages CMS — https://app.pagescms.org)
+# Define o que pode ser editado pelo painel, sem mexer no código do site.
+
+media:
+  input: img/conteudos
+  output: img/conteudos
+  categories: [image]
+
+content:
+  - name: conteudos
+    label: Conteúdos do site
+    type: file
+    path: data/conteudos.json
+    format: json
+    fields:
+      - name: youtube
+        label: Vídeos do YouTube
+        description: Aparecem na seção "Conteúdos". O primeiro da lista é exibido primeiro.
+        type: object
+        list: true
+        fields:
+          - name: titulo
+            label: Título
+            description: Texto exibido abaixo do vídeo (opcional).
+            type: string
+          - name: url
+            label: Link do vídeo
+            description: "Copie o link do YouTube, por exemplo: https://www.youtube.com/watch?v=XXXXXXXXXXX ou https://youtu.be/XXXXXXXXXXX"
+            type: string
+            required: true
+
+      - name: instagram
+        label: Publicações do Instagram
+        description: Publicações e reels exibidos em "Nas redes sociais".
+        type: object
+        list: true
+        fields:
+          - name: url
+            label: Link ou código de incorporação
+            description: "Cole o link da publicação (no Instagram: ... → Copiar link, ex.: https://www.instagram.com/p/XXXXXXXXXXX/) ou o código de Incorporar inteiro."
+            type: text
+            required: true
+          - name: imagem
+            label: Imagem de capa (opcional)
+            description: Exibida no site caso o Instagram não permita mostrar a publicação. Use a mesma foto do post.
+            type: image
+          - name: legenda
+            label: Legenda curta (opcional)
+            description: Uma frase sobre a publicação, exibida abaixo da imagem de capa.
+            type: string
+
+      - name: linkedin
+        label: Publicações do LinkedIn
+        description: Publicações exibidas em "Nas redes sociais".
+        type: object
+        list: true
+        fields:
+          - name: url
+            label: Código de incorporação ou link
+            description: "No LinkedIn, clique em ... na publicação → Incorporar esta publicação → copie o código e cole aqui."
+            type: text
+            required: true
