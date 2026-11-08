@@ -1,0 +1,5 @@
+/* Arquivo de entrada do Tailwind. Não é carregado pelo site:
+   "npm run build" gera css/tailwind.css a partir dele. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

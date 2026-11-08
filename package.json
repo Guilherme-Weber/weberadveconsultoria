@@ -1,0 +1,12 @@
+{
+  "name": "weberadveconsultoria",
+  "private": true,
+  "description": "Site de Francieli Weber, Advocacia e Consultoria Jurídica",
+  "scripts": {
+    "build": "tailwindcss -i ./css/tailwind-entrada.css -o ./css/tailwind.css --minify",
+    "dev": "tailwindcss -i ./css/tailwind-entrada.css -o ./css/tailwind.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.16"
+  }
+}

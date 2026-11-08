@@ -31,13 +31,28 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      # Regenera css/tailwind.css, garantindo que as classes novas do HTML estejam no CSS
+      - name: Build CSS
+        run: |
+          npm ci
+          npm run build
+      # Publica só os arquivos do site (nada de originais/, configs...)
+      - name: Collect site files
+        run: |
+          mkdir _site
+          cp -r index.html main.html 404.html sitemap.xml css js data img _site/
+          rm _site/css/tailwind-entrada.css
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          path: '_site'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

@@ -1,20 +1,28 @@
 // --- Menu mobile ---
 const mobileMenuButton = document.getElementById('mobile-menu-button');
 const mobileMenu = document.getElementById('mobile-menu');
-const mobileMenuIcon = mobileMenuButton.querySelector('i');
+const mobileMenuIcon = mobileMenuButton.querySelector('use');
 const header = document.getElementById('header');
 
 function setMenu(open) {
     mobileMenu.classList.toggle('hidden', !open);
-    mobileMenuIcon.classList.toggle('fa-bars', !open);
-    mobileMenuIcon.classList.toggle('fa-xmark', open);
+    mobileMenuIcon.setAttribute('href', open ? '#i-xmark' : '#i-bars');
     mobileMenuButton.setAttribute('aria-expanded', String(open));
     mobileMenuButton.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
     header.classList.toggle('scrolled', open || window.scrollY > 40);
 }
-mobileMenuButton.addEventListener('click', () => setMenu(mobileMenu.classList.contains('hidden')));
+const menuAberto = () => !mobileMenu.classList.contains('hidden');
+mobileMenuButton.addEventListener('click', () => setMenu(!menuAberto()));
 document.querySelectorAll('#mobile-menu a').forEach(link => link.addEventListener('click', () => setMenu(false)));
-document.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
+document.addEventListener('keydown', e => {
+    if (e.key !== 'Escape' || !menuAberto()) return;
+    setMenu(false);
+    mobileMenuButton.focus();   // devolve o foco ao botão que abriu o menu
+});
+// Fecha o menu ao clicar fora dele
+document.addEventListener('click', e => {
+    if (menuAberto() && !header.contains(e.target)) setMenu(false);
+});
 
 // --- Formulário de contato (FormSubmit → fweber.adv@gmail.com) ---
 // Envia sem sair da página. Sem JavaScript, o formulário é enviado normalmente pelo "action".
@@ -100,7 +108,7 @@ function renderConteudos(cfg) {
         card.className = 'card card-hover overflow-hidden';
         card.innerHTML = `
             <button type="button" class="yt-facade" style="background-image:url('https://i.ytimg.com/vi/${id}/hqdefault.jpg')" aria-label="Reproduzir: ${titulo}">
-                <span class="yt-play"><i class="fa-solid fa-play" aria-hidden="true"></i></span>
+                <span class="yt-play"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg></span>
             </button>
             ${v.titulo ? `<div class="p-5"><h4 class="text-xl font-semibold">${titulo}</h4></div>` : ''}`;
         card.querySelector('button').addEventListener('click', e => {
@@ -131,11 +139,11 @@ function renderConteudos(cfg) {
             <a href="${link}" target="_blank" rel="noopener noreferrer" class="ig-preview">
                 ${imagem
                     ? `<img src="${escapeHtml(imagem)}" alt="${legenda || 'Publicação no Instagram'}" loading="lazy" class="ig-thumb">`
-                    : `<span class="ig-placeholder"><i class="fa-brands fa-instagram" aria-hidden="true"></i><span>Publicação no Instagram</span></span>`}
+                    : `<span class="ig-placeholder"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg><span>Publicação no Instagram</span></span>`}
                 ${legenda ? `<span class="ig-legenda">${legenda}</span>` : ''}
             </a>
             <iframe class="ig-frame" src="${link}embed/captioned/" height="640" width="100%" frameborder="0" scrolling="no" allowtransparency="true" title="Publicação no Instagram" tabindex="-1" aria-hidden="true"></iframe>
-            <a href="${link}" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Ver no Instagram</a>`;
+            <a href="${link}" target="_blank" rel="noopener noreferrer" class="social-link"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg> Ver no Instagram</a>`;
         listaRedes.appendChild(wrap);
     });
     linkedin.forEach(url => {
@@ -151,7 +159,7 @@ function renderConteudos(cfg) {
         const wrap = document.createElement('div');
         wrap.className = 'card social-embed';
         wrap.innerHTML = `<iframe src="${escapeHtml(src)}" height="560" width="100%" frameborder="0" allowfullscreen loading="lazy" title="Publicação no LinkedIn"></iframe>
-            <a href="https://www.linkedin.com/feed/update/${urn}/" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i> Ver no LinkedIn</a>`;
+            <a href="https://www.linkedin.com/feed/update/${urn}/" target="_blank" rel="noopener noreferrer" class="social-link"><svg class="icon" aria-hidden="true"><use href="#i-linkedin-in"/></svg> Ver no LinkedIn</a>`;
         listaRedes.appendChild(wrap);
     });
 
@@ -184,17 +192,6 @@ window.addEventListener('message', e => {
         if (preview) preview.remove();
     });
 });
-
-// --- Animações ao rolar ---
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-        }
-    });
-}, { threshold: 0.15 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 // --- Cabeçalho e link ativo ao rolar ---
 const sections = document.querySelectorAll('main section');

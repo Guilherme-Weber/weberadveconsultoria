@@ -6,16 +6,44 @@ https://guilherme-weber.github.io/weberadveconsultoria/
 ## Estrutura
 
 ```
-index.html            Página principal
-main.html             Redireciona o endereço antigo para a index.html
-css/estilos.css       Estilos do site (cores, fontes, fundos)
-js/site.js            Comportamento (menu, animações, formulário, vídeos e posts)
-data/conteudos.json   Vídeos do YouTube e posts do Instagram/LinkedIn
-.pages.yml            Configuração do painel de edição (Pages CMS)
-img/                  Imagens (fotos de fundo, logo, foto de perfil)
+index.html               Página principal (os ícones SVG ficam no início do <body>)
+404.html                 Página de "endereço não encontrado"
+main.html                Redireciona o endereço antigo para a index.html
+sitemap.xml              Mapa do site para o Google
+css/estilos.css          Estilos do site (cores, fontes, fundos)
+css/tailwind.css         Gerado automaticamente; não edite à mão (veja abaixo)
+css/tailwind-entrada.css Arquivo de entrada do Tailwind
+js/site.js               Comportamento (menu, formulário, vídeos e posts)
+data/conteudos.json      Vídeos do YouTube e posts do Instagram/LinkedIn
+.pages.yml               Configuração do painel de edição (Pages CMS)
+img/                     Imagens usadas no site
+originais/               Fotos e logos originais em alta qualidade (não são publicados)
 ```
 
-Bibliotecas carregadas por CDN: Tailwind CSS 3.4.16, Font Awesome 7 e Google Fonts.
+O site é publicado pelo GitHub Actions ([.github/workflows/static.yml](.github/workflows/static.yml)),
+que gera o CSS e envia **apenas** os arquivos do site: a pasta `originais/`
+e os arquivos de configuração não ficam públicos. Se criar um arquivo novo que precise ir para o site
+fora das pastas `css`, `js`, `data` e `img`, inclua-o na linha `cp -r` desse workflow.
+
+Fontes: Google Fonts. Ícones: [Font Awesome Free](https://fontawesome.com) (CC BY 4.0),
+embutidos como SVG, sem carregar a biblioteca inteira.
+
+## Tailwind CSS (classes como `text-xl`, `md:grid-cols-2`)
+
+O CSS do Tailwind é gerado a partir das classes usadas na `index.html` e no `js/site.js`.
+O GitHub gera de novo a cada publicação, então o site publicado está sempre certo.
+Para ver uma classe **nova** funcionando no computador antes de publicar
+(requer [Node.js](https://nodejs.org)):
+
+```
+npm install      # só na primeira vez
+npm run dev      # regera css/tailwind.css sempre que um arquivo é salvo
+```
+
+Para adicionar um ícone: copie o `<symbol>` do SVG em
+[fontawesome.com/icons](https://fontawesome.com/search?ic=free) (ou do pacote
+`@fortawesome/fontawesome-free`, pasta `svgs/`) para o bloco de ícones no início da
+`index.html`, com `id="i-NOME"`, e use `<svg class="icon" aria-hidden="true"><use href="#i-NOME"/></svg>`.
 
 ## Adicionar vídeos e posts pelo painel (sem mexer em código)
 
@@ -46,11 +74,18 @@ gratuito [FormSubmit](https://formsubmit.co).
 
 ## Outras atualizações
 
-- **Fotos de fundo:** substitua os arquivos `img/fundo-*.jpg` mantendo o mesmo nome.
-  As fotos atuais são do Unsplash (licença livre).
+- **Fotos de fundo:** ficam em `img/` no formato WebP, em duas versões: `fundo-*.webp`
+  (1920 px de largura) e `fundo-*-celular.webp` (1080 px, usada em telas pequenas).
+  Para trocar uma foto, converta-a em [squoosh.app](https://squoosh.app) (formato WebP,
+  qualidade ~70) nos dois tamanhos e substitua os arquivos mantendo os nomes. Guarde o
+  original em `originais/`. As fotos atuais são do Unsplash (licença livre).
 - **Cores:** ficam no topo de `css/estilos.css` (bloco `:root`).
 - **Endereço do site:** se houver um domínio próprio, troque o endereço nas tags
-  `canonical`, `og:url`, `og:image` e nos dados estruturados no início da `index.html`.
+  `canonical`, `og:url`, `og:image` e nos dados estruturados no início da `index.html`,
+  além do `sitemap.xml` e dos caminhos `/weberadveconsultoria/` da `404.html`.
+- **Google:** para o site aparecer mais rápido nas buscas, cadastre-o no
+  [Google Search Console](https://search.google.com/search-console) e envie o endereço
+  `https://guilherme-weber.github.io/weberadveconsultoria/sitemap.xml`.
 
 ## Visualizar no computador
 

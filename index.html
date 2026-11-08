@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Francieli Weber | Advocacia e Consultoria Jurídica</title>
-    <meta name="description" content="Francieli dos Santos da Luz Weber — Advogada (OAB/PR 99.852), consultora e correspondente jurídica. Direito Civil, Família, Consumidor, mediação e defensoria dativa no Paraná.">
+    <meta name="description" content="Francieli dos Santos da Luz Weber, advogada (OAB/PR 99.852), consultora e correspondente jurídica. Direito Civil, Família, Consumidor, mediação e defensoria dativa no Paraná.">
     <meta name="theme-color" content="#15281f">
     <link rel="canonical" href="https://guilherme-weber.github.io/weberadveconsultoria/">
     <link rel="icon" type="image/png" href="./img/favicon.png">
@@ -13,9 +13,9 @@
          Se o site ganhar um domínio próprio, troque o endereço nas linhas abaixo. -->
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
-    <meta property="og:site_name" content="Francieli Weber — Advocacia">
+    <meta property="og:site_name" content="Francieli Weber Advocacia">
     <meta property="og:title" content="Francieli Weber | Advocacia e Consultoria Jurídica">
-    <meta property="og:description" content="Advogada OAB/PR 99.852 — Direito Civil, Família, Consumidor, mediação e defensoria dativa.">
+    <meta property="og:description" content="Advogada OAB/PR 99.852. Direito Civil, Família, Consumidor, mediação e defensoria dativa.">
     <meta property="og:url" content="https://guilherme-weber.github.io/weberadveconsultoria/">
     <meta property="og:image" content="https://guilherme-weber.github.io/weberadveconsultoria/img/compartilhar.jpg">
     <meta property="og:image:width" content="1200">
@@ -26,57 +26,90 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Attorney",
-        "name": "Francieli dos Santos da Luz Weber",
-        "description": "Advocacia e Consultoria Jurídica — OAB/PR 99.852",
+        "@type": "LegalService",
+        "name": "Francieli Weber Advocacia e Consultoria Jurídica",
+        "description": "Advocacia e consultoria jurídica. OAB/PR 99.852.",
         "url": "https://guilherme-weber.github.io/weberadveconsultoria/",
         "image": "https://guilherme-weber.github.io/weberadveconsultoria/img/compartilhar.jpg",
+        "logo": "https://guilherme-weber.github.io/weberadveconsultoria/img/favicon.png",
         "telephone": "+55 41 99709-8729",
         "email": "fweber.adv@gmail.com",
-        "areaServed": ["Araucária", "Lapa", "Fazenda Rio Grande", "Campo Largo", "Paraná, Brasil"],
+        "address": { "@type": "PostalAddress", "addressRegion": "PR", "addressCountry": "BR" },
+        "areaServed": ["Araucária", "Lapa", "Fazenda Rio Grande", "Campo Largo", "Paraná"],
         "knowsAbout": ["Direito Civil", "Direito de Família", "Direito do Consumidor", "Mediação", "Defensoria Dativa"],
+        "employee": {
+            "@type": "Person",
+            "name": "Francieli dos Santos da Luz Weber",
+            "jobTitle": "Advogada",
+            "identifier": "OAB/PR 99.852",
+            "sameAs": ["https://www.instagram.com/fran.weber/", "https://www.linkedin.com/in/fweberadv/"]
+        },
         "sameAs": ["https://www.instagram.com/fran.weber/", "https://www.linkedin.com/in/fweberadv/"]
     }
     </script>
 
     <script>document.documentElement.classList.add('js');</script>
-    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-    <link rel="preload" as="image" href="./img/fundo-biblioteca.jpg">
+    <link rel="preload" as="image" href="./img/fundo-biblioteca-celular.webp" media="(max-width: 768px)">
+    <link rel="preload" as="image" href="./img/fundo-biblioteca.webp" media="(min-width: 769px)">
 
+    <!-- css/tailwind.css é gerado por "npm run build" (veja o README) -->
+    <link rel="stylesheet" href="./css/tailwind.css">
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
+    <!-- Ícones (Font Awesome Free 7.0.0, licença CC BY 4.0 — https://fontawesome.com/license/free).
+         Para usar: <svg class="icon" aria-hidden="true"><use href="#i-NOME"/></svg> -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+        <symbol id="i-bars" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></symbol>
+        <symbol id="i-cart-shopping" viewBox="0 0 640 512"><path d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16zM208 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm224 0a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"/></symbol>
+        <symbol id="i-credit-card" viewBox="0 0 512 512"><path d="M0 128l0 32 512 0 0-32c0-35.3-28.7-64-64-64L64 64C28.7 64 0 92.7 0 128zm0 80L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-176-512 0zM64 360c0-13.3 10.7-24 24-24l48 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-48 0c-13.3 0-24-10.7-24-24zm144 0c0-13.3 10.7-24 24-24l64 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-64 0c-13.3 0-24-10.7-24-24z"/></symbol>
+        <symbol id="i-envelope" viewBox="0 0 512 512"><path d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z"/></symbol>
+        <symbol id="i-file-contract" viewBox="0 0 384 512"><path d="M0 64C0 28.7 28.7 0 64 0L213.5 0c17 0 33.3 6.7 45.3 18.7L365.3 125.3c12 12 18.7 28.3 18.7 45.3L384 448c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 64zm208-5.5l0 93.5c0 13.3 10.7 24 24 24L325.5 176 208 58.5zM88 64C74.7 64 64 74.7 64 88s10.7 24 24 24l48 0c13.3 0 24-10.7 24-24s-10.7-24-24-24L88 64zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24l48 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-48 0zm70.3 160c-11.3 0-21.9 5.1-28.9 13.9L69.3 409c-8.3 10.3-6.6 25.5 3.7 33.7s25.5 6.6 33.7-3.8l47.1-58.8 15.2 50.7c3 10.2 12.4 17.1 23 17.1l104 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-86.1 0-16.1-53.6c-4.7-15.7-19.1-26.4-35.5-26.4z"/></symbol>
+        <symbol id="i-handshake" viewBox="0 0 576 512"><path d="M268.9 85.2L152.3 214.8c-4.6 5.1-4.4 13 .5 17.9 30.5 30.5 80 30.5 110.5 0l31.8-31.8c4.2-4.2 9.5-6.5 14.9-6.9 6.8-.6 13.8 1.7 19 6.9L505.6 376 576 320 576 32 464 96 440.2 80.1C424.4 69.6 405.9 64 386.9 64l-70.4 0c-1.1 0-2.3 0-3.4 .1-16.9 .9-32.8 8.5-44.2 21.1zM116.6 182.7L223.4 64 183.8 64c-25.5 0-49.9 10.1-67.9 28.1L112 96 0 32 0 320 156.4 450.3c23 19.2 52 29.7 81.9 29.7l15.7 0-7-7c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l41 41 9 0c19.1 0 37.8-4.3 54.8-12.3L359 441c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l32 32 17.5-17.5c8.9-8.9 11.5-21.8 7.6-33.1l-137.9-136.8-14.9 14.9c-49.3 49.3-129.1 49.3-178.4 0-23-23-23.9-59.9-2.2-84z"/></symbol>
+        <symbol id="i-house" viewBox="0 0 512 512"><path d="M277.8 8.6c-12.3-11.4-31.3-11.4-43.5 0l-224 208c-9.6 9-12.8 22.9-8 35.1S18.8 272 32 272l16 0 0 176c0 35.3 28.7 64 64 64l288 0c35.3 0 64-28.7 64-64l0-176 16 0c13.2 0 25-8.1 29.8-20.3s1.6-26.2-8-35.1l-224-208zM240 320l32 0c26.5 0 48 21.5 48 48l0 96-128 0 0-96c0-26.5 21.5-48 48-48z"/></symbol>
+        <symbol id="i-instagram" viewBox="0 0 448 512"><path d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></symbol>
+        <symbol id="i-landmark" viewBox="0 0 512 512"><path d="M238.7 5.1c10.5-6.8 24.1-6.8 34.6 0l224 144c11.9 7.7 17.4 22.3 13.4 35.9s-16.5 23-30.7 23l-32 0 0 208 51.2 38.4c8.1 6 12.8 15.5 12.8 25.6 0 17.7-14.3 32-32 32L32 512c-17.7 0-32-14.3-32-32 0-10.1 4.7-19.6 12.8-25.6l51.2-38.4 0 0 0-208-32 0c-14.2 0-26.7-9.4-30.7-23s1.5-28.3 13.4-35.9l224-144zM336 208l0 208 64 0 0-208-64 0zM224 416l64 0 0-208-64 0 0 208zM112 208l0 208 64 0 0-208-64 0z"/></symbol>
+        <symbol id="i-linkedin-in" viewBox="0 0 448 512"><path d="M100.3 448l-92.9 0 0-299.1 92.9 0 0 299.1zM53.8 108.1C24.1 108.1 0 83.5 0 53.8 0 39.5 5.7 25.9 15.8 15.8s23.8-15.8 38-15.8 27.9 5.7 38 15.8 15.8 23.8 15.8 38c0 29.7-24.1 54.3-53.8 54.3zM447.9 448l-92.7 0 0-145.6c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7l0 148.1-92.8 0 0-299.1 89.1 0 0 40.8 1.3 0c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3l0 164.3-.1 0z"/></symbol>
+        <symbol id="i-paper-plane" viewBox="0 0 576 512"><path d="M536.4-26.3c9.8-3.5 20.6-1 28 6.3s9.8 18.2 6.3 28l-178 496.9c-5 13.9-18.1 23.1-32.8 23.1-14.2 0-27-8.6-32.3-21.7l-64.2-158c-4.5-11-2.5-23.6 5.2-32.6l94.5-112.4c5.1-6.1 4.7-15-.9-20.6s-14.6-6-20.6-.9L229.2 276.1c-9.1 7.6-21.6 9.6-32.6 5.2L38.1 216.8c-13.1-5.3-21.7-18.1-21.7-32.3 0-14.7 9.2-27.8 23.1-32.8l496.9-178z"/></symbol>
+        <symbol id="i-people-roof" viewBox="0 0 576 512"><path d="M302.3-12.6c-9-4.5-19.6-4.5-28.6 0l-256 128C1.9 123.3-4.5 142.5 3.4 158.3s27.1 22.2 42.9 14.3L288 51.8 529.7 172.6c15.8 7.9 35 1.5 42.9-14.3s1.5-35-14.3-42.9l-256-128zM288 272a56 56 0 1 0 0-112 56 56 0 1 0 0 112zm0 48c-53 0-96 43-96 96l0 32c0 17.7 14.3 32 32 32l128 0c17.7 0 32-14.3 32-32l0-32c0-53-43-96-96-96zM160 256a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm352 0a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM112 336c-44.2 0-80 35.8-80 80l0 33.1c0 17 13.8 30.9 30.9 30.9l87.8 0c-4.3-9.8-6.7-20.6-6.7-32l0-48c0-18.4 3.5-36 9.8-52.2-12.2-7.5-26.5-11.8-41.8-11.8zM425.4 480l87.8 0c17 0 30.9-13.8 30.9-30.9l0-33.1c0-44.2-35.8-80-80-80-15.3 0-29.6 4.3-41.8 11.8 6.3 16.2 9.8 33.8 9.8 52.2l0 48c0 11.4-2.4 22.2-6.7 32z"/></symbol>
+        <symbol id="i-play" viewBox="0 0 448 512"><path d="M91.2 36.9c-12.4-6.8-27.4-6.5-39.6 .7S32 57.9 32 72l0 368c0 14.1 7.5 27.2 19.6 34.4s27.2 7.5 39.6 .7l336-184c12.8-7 20.8-20.5 20.8-35.1s-8-28.1-20.8-35.1l-336-184z"/></symbol>
+        <symbol id="i-scale-balanced" viewBox="0 0 640 512"><path d="M384 32l128 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L398.4 96c-5.2 25.8-22.9 47.1-46.4 57.3l0 294.7 160 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-384 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l160 0 0-294.7c-23.5-10.3-41.2-31.6-46.4-57.3L128 96c-17.7 0-32-14.3-32-32s14.3-32 32-32l128 0c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288L584.4 320 512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1-10.8 44.8-63.1 78.9-126 78.9zM126.8 195.8L54.4 320 199.3 320 126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1-10.8 44.8-63.1 78.9-126 78.9S11.7 382 .9 337.1z"/></symbol>
+        <symbol id="i-share-nodes" viewBox="0 0 512 512"><path d="M384 192c53 0 96-43 96-96s-43-96-96-96-96 43-96 96c0 5.4 .5 10.8 1.3 16L159.6 184.1c-16.9-15-39.2-24.1-63.6-24.1-53 0-96 43-96 96s43 96 96 96c24.4 0 46.6-9.1 63.6-24.1L289.3 400c-.9 5.2-1.3 10.5-1.3 16 0 53 43 96 96 96s96-43 96-96-43-96-96-96c-24.4 0-46.6 9.1-63.6 24.1L190.7 272c.9-5.2 1.3-10.5 1.3-16s-.5-10.8-1.3-16l129.7-72.1c16.9 15 39.2 24.1 63.6 24.1z"/></symbol>
+        <symbol id="i-whatsapp" viewBox="0 0 448 512"><path d="M380.9 97.1c-41.9-42-97.7-65.1-157-65.1-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480 117.7 449.1c32.4 17.7 68.9 27 106.1 27l.1 0c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1s56.2 81.2 56.1 130.5c0 101.8-84.9 184.6-186.6 184.6zM325.1 300.5c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8s-14.3 18-17.6 21.8c-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7s-12.5-30.1-17.1-41.2c-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2s-9.7 1.4-14.8 6.9c-5.1 5.6-19.4 19-19.4 46.3s19.9 53.7 22.6 57.4c2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4s4.6-24.1 3.2-26.4c-1.3-2.5-5-3.9-10.5-6.6z"/></symbol>
+        <symbol id="i-xmark" viewBox="0 0 384 512"><path d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></symbol>
+        <symbol id="i-youtube" viewBox="0 0 576 512"><path d="M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z"/></symbol>
+    </svg>
+
     <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo</a>
 
     <!-- Cabeçalho e navegação -->
     <header id="header" class="fixed top-0 left-0 right-0 z-50">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
             <a href="#home" class="block" aria-label="Início">
-                <img src="./img/monograma-marfim.png" alt="Francieli Weber — Advocacia" width="710" height="236" class="h-10 md:h-11 w-auto">
+                <img src="./img/monograma-marfim.png" alt="Francieli Weber Advocacia" width="710" height="236" class="h-10 md:h-11 w-auto">
             </a>
-            <nav class="hidden lg:flex items-center space-x-8 text-xs font-bold tracking-[0.2em]" aria-label="Principal">
-                <a href="#home" class="nav-link">INÍCIO</a>
-                <a href="#sobre" class="nav-link">SOBRE</a>
-                <a href="#areasdeatuacao" class="nav-link">ÁREAS DE ATUAÇÃO</a>
-                <a href="#carreira" class="nav-link">CARREIRA</a>
-                <a href="#conteudos" class="nav-link">CONTEÚDOS</a>
-                <a href="#contato" class="nav-link">CONTATO</a>
+            <nav class="hidden lg:flex items-center space-x-8 text-[0.95rem] tracking-wide" aria-label="Principal">
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#areasdeatuacao" class="nav-link">Áreas de atuação</a>
+                <a href="#carreira" class="nav-link">Carreira</a>
+                <a href="#conteudos" class="nav-link">Conteúdos</a>
+                <a href="#contato" class="nav-link">Contato</a>
             </nav>
-            <button id="mobile-menu-button" class="lg:hidden text-[#e9e2d2] p-2 -mr-2" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
-                <i class="fa-solid fa-bars text-xl" aria-hidden="true"></i>
+            <button id="mobile-menu-button" type="button" class="lg:hidden text-[#e9e2d2] p-2 -mr-2" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="icon text-xl" aria-hidden="true"><use href="#i-bars"/></svg>
             </button>
         </div>
         <nav id="mobile-menu" class="hidden lg:hidden border-t border-white/10" style="background: var(--forest-900);" aria-label="Menu móvel">
-            <a href="#home" class="block py-3 px-6 text-sm text-[#e9e2d2] hover:bg-white/5">Início</a>
-            <a href="#sobre" class="block py-3 px-6 text-sm text-[#e9e2d2] hover:bg-white/5">Sobre</a>
-            <a href="#areasdeatuacao" class="block py-3 px-6 text-sm text-[#e9e2d2] hover:bg-white/5">Áreas de Atuação</a>
-            <a href="#carreira" class="block py-3 px-6 text-sm text-[#e9e2d2] hover:bg-white/5">Carreira</a>
-            <a href="#conteudos" class="block py-3 px-6 text-sm text-[#e9e2d2] hover:bg-white/5">Conteúdos</a>
-            <a href="#contato" class="block py-3 px-6 text-sm text-[#e9e2d2] hover:bg-white/5">Contato</a>
+            <a href="#home" class="block py-3 px-6 text-[#e9e2d2] hover:bg-white/5">Início</a>
+            <a href="#sobre" class="block py-3 px-6 text-[#e9e2d2] hover:bg-white/5">Sobre</a>
+            <a href="#areasdeatuacao" class="block py-3 px-6 text-[#e9e2d2] hover:bg-white/5">Áreas de atuação</a>
+            <a href="#carreira" class="block py-3 px-6 text-[#e9e2d2] hover:bg-white/5">Carreira</a>
+            <a href="#conteudos" class="block py-3 px-6 text-[#e9e2d2] hover:bg-white/5">Conteúdos</a>
+            <a href="#contato" class="block py-3 px-6 text-[#e9e2d2] hover:bg-white/5">Contato</a>
         </nav>
     </header>
 
@@ -85,22 +118,22 @@
         <section id="home" class="section-dark photo-band foto-biblioteca min-h-screen flex items-center pt-28 pb-20">
             <div class="container mx-auto px-6">
                 <div class="grid md:grid-cols-5 gap-14 items-center">
-                    <div class="md:col-span-3 text-center md:text-left reveal">
+                    <div class="md:col-span-3 text-center md:text-left entrada">
                         <img src="./img/monograma-ouro.png" alt="" width="710" height="236" class="hero-monogram mx-auto md:mx-0 mb-6">
-                        <p class="eyebrow mb-5">Advocacia &amp; Consultoria Jurídica · OAB/PR 99.852</p>
+                        <p class="hero-kicker mb-3">Advocacia e consultoria jurídica</p>
                         <h1 class="text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] mb-6" style="color: #f7f3ea;">Francieli dos Santos da Luz Weber</h1>
-                        <p class="hero-tags text-base md:text-lg text-[#cfc6b3] max-w-xl mx-auto md:mx-0 leading-relaxed font-light">
-                            <span>Advogada</span><span>Consultora Jurídica</span><span>Correspondente Jurídica</span><span>Advocacia Cível</span><span>Gestão de Conflitos</span><span>Mediação</span><span>Defensora Dativa</span>
+                        <p class="text-base md:text-lg text-[#cfc6b3] max-w-xl mx-auto md:mx-0 leading-relaxed font-light">
+                            Advogada (OAB/PR&nbsp;99.852) nas áreas cível, de família e do consumidor. Também atuo em mediação, como correspondente jurídica e como defensora dativa nas comarcas de Araucária, Lapa e Fazenda Rio Grande.
                         </p>
                         <div class="mt-10 flex flex-wrap justify-center md:justify-start gap-4">
-                            <a href="#contato" class="btn-gold py-3 px-8 rounded-sm font-bold text-sm tracking-widest uppercase">Agende uma conversa</a>
-                            <a href="#areasdeatuacao" class="btn-outline py-3 px-8 rounded-sm font-bold text-sm tracking-widest uppercase">Áreas de atuação</a>
+                            <a href="#contato" class="btn-gold w-full sm:w-auto text-center py-3 px-8 rounded-sm font-bold tracking-wide">Agende uma conversa</a>
+                            <a href="#areasdeatuacao" class="btn-outline w-full sm:w-auto text-center py-3 px-8 rounded-sm font-bold tracking-wide">Ver áreas de atuação</a>
                         </div>
                     </div>
-                    <div class="md:col-span-2 flex justify-center reveal" style="transition-delay: 200ms;">
+                    <div class="md:col-span-2 flex justify-center entrada entrada-2">
                         <div class="relative w-64 h-80 md:w-72 md:h-96">
                             <div class="portrait-frame"></div>
-                            <img src="./img/perfil.jpg" alt="Foto de Francieli Weber" width="600" height="600" fetchpriority="high" class="portrait relative w-full h-full object-cover shadow-2xl">
+                            <img src="./img/perfil.webp" alt="Foto de Francieli Weber" width="600" height="600" fetchpriority="high" class="portrait relative w-full h-full object-cover shadow-2xl">
                         </div>
                     </div>
                 </div>
@@ -110,12 +143,13 @@
         <!-- Sobre -->
         <section id="sobre" class="section-dark photo-band foto-justica py-28 md:py-40">
             <div class="container mx-auto px-6">
-                <div class="text-center max-w-3xl mx-auto reveal">
-                    <p class="eyebrow mb-3">Quem sou</p>
-                    <h2 class="text-4xl md:text-5xl font-semibold mb-5">Sobre Mim</h2>
-                    <div class="ornament mb-8"><img src="./img/monograma-ouro.png" alt="" width="710" height="236" class="ornament-logo"></div>
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="titulo-secao text-4xl md:text-5xl font-semibold mb-10">Sobre mim</h2>
                     <p class="font-heading italic text-2xl md:text-3xl leading-snug" style="color: #efe8da;">
-                        Com anos de experiência, estou pronta para oferecer soluções jurídicas eficazes e personalizadas. Minha missão é buscar a justiça e levar tranquilidade a cada cliente, com ética, dedicação e transparência.
+                        Minha missão é buscar a justiça e levar tranquilidade a cada cliente, com ética, dedicação e transparência.
+                    </p>
+                    <p class="mt-8 text-[#cfc6b3] leading-relaxed max-w-2xl mx-auto">
+                        Advogo desde 2019 e, desde 2020, atuo como defensora dativa pela OAB/PR, onde hoje presido a Comissão de Advocacia Dativa. Antes disso, trabalhei em escritórios de advocacia e no Tribunal Regional do Trabalho da 9ª&nbsp;Região.
                     </p>
                 </div>
             </div>
@@ -124,26 +158,27 @@
         <!-- Áreas de atuação (fundo sólido) -->
         <section id="areasdeatuacao" class="section-dark watermark py-24 md:py-32">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-16 reveal">
-                    <p class="eyebrow mb-3">Como posso ajudar</p>
-                    <h2 class="text-4xl md:text-5xl font-semibold mb-5">Áreas de Atuação</h2>
-                    <div class="ornament"><img src="./img/monograma-ouro.png" alt="" width="710" height="236" class="ornament-logo"></div>
-                </div>
-                <div class="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="card card-hover p-9 text-center reveal" style="transition-delay: 100ms;">
-                        <div class="card-icon"><i class="fa-solid fa-file-contract text-2xl" aria-hidden="true"></i></div>
-                        <h3 class="text-2xl font-semibold mb-3">Direito Civil</h3>
-                        <p class="text-sm leading-relaxed">Atuação especializada em questões civis, com foco na proteção dos seus direitos.</p>
+                <h2 class="titulo-secao text-4xl md:text-5xl font-semibold text-center mb-16">Áreas de atuação</h2>
+                <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-6 md:gap-8">
+                    <div class="card area-card p-8 md:p-9">
+                        <div class="card-icon"><svg class="icon text-2xl" aria-hidden="true"><use href="#i-file-contract"/></svg></div>
+                        <h3 class="text-2xl font-semibold mb-3">Direito civil</h3>
+                        <p class="leading-relaxed">Contratos, cobranças, indenizações e questões de imóveis e locação, da orientação preventiva ao processo.</p>
                     </div>
-                    <div class="card card-hover p-9 text-center reveal" style="transition-delay: 200ms;">
-                        <div class="card-icon"><i class="fa-solid fa-people-roof text-2xl" aria-hidden="true"></i></div>
-                        <h3 class="text-2xl font-semibold mb-3">Direito de Família</h3>
-                        <p class="text-sm leading-relaxed">Apoio jurídico em questões familiares, buscando sempre a melhor solução para todos os envolvidos.</p>
+                    <div class="card area-card p-8 md:p-9">
+                        <div class="card-icon"><svg class="icon text-2xl" aria-hidden="true"><use href="#i-people-roof"/></svg></div>
+                        <h3 class="text-2xl font-semibold mb-3">Direito de família</h3>
+                        <p class="leading-relaxed">Divórcio, pensão alimentícia, guarda e convivência, buscando a melhor solução para todos os envolvidos.</p>
                     </div>
-                    <div class="card card-hover p-9 text-center reveal" style="transition-delay: 300ms;">
-                        <div class="card-icon"><i class="fa-solid fa-cart-shopping text-2xl" aria-hidden="true"></i></div>
-                        <h3 class="text-2xl font-semibold mb-3">Direito do Consumidor</h3>
-                        <p class="text-sm leading-relaxed">Defesa dos direitos do consumidor, para que suas reclamações sejam ouvidas e tratadas como merecem.</p>
+                    <div class="card area-card p-8 md:p-9">
+                        <div class="card-icon"><svg class="icon text-2xl" aria-hidden="true"><use href="#i-cart-shopping"/></svg></div>
+                        <h3 class="text-2xl font-semibold mb-3">Direito do consumidor</h3>
+                        <p class="leading-relaxed">Cobranças indevidas, nome negativado, produtos e serviços com defeito e problemas com bancos e operadoras.</p>
+                    </div>
+                    <div class="card area-card p-8 md:p-9">
+                        <div class="card-icon"><svg class="icon text-2xl" aria-hidden="true"><use href="#i-handshake"/></svg></div>
+                        <h3 class="text-2xl font-semibold mb-3">Mediação e gestão de conflitos</h3>
+                        <p class="leading-relaxed">Construção de acordos antes ou durante o processo, com experiência em audiências de mediação no Cejusc.</p>
                     </div>
                 </div>
             </div>
@@ -152,85 +187,80 @@
         <!-- Carreira (do mais recente para o mais antigo) -->
         <section id="carreira" class="section-dark photo-band foto-martelo py-24 md:py-32">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-16 reveal">
-                    <p class="eyebrow mb-3">Experiência</p>
-                    <h2 class="text-4xl md:text-5xl font-semibold mb-5">Trajetória Profissional</h2>
-                    <div class="ornament"><img src="./img/monograma-ouro.png" alt="" width="710" height="236" class="ornament-logo"></div>
-                </div>
+                <h2 class="titulo-secao text-4xl md:text-5xl font-semibold text-center mb-16">Trajetória profissional</h2>
 
                 <ol class="timeline max-w-3xl mx-auto space-y-10">
-                    <li class="flex items-start gap-6 reveal">
-                        <div class="tl-dot"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></div>
+                    <li class="flex items-start gap-6">
+                        <div class="tl-dot"><svg class="icon" aria-hidden="true"><use href="#i-scale-balanced"/></svg></div>
                         <div class="card p-6 w-full">
-                            <p class="tl-year mb-1">2025 — PRESENTE</p>
+                            <p class="tl-year mb-1">2025 – atual</p>
                             <h3 class="text-2xl font-semibold">Presidente da Comissão de Advocacia Dativa</h3>
-                            <p class="italic text-sm mb-2">OAB/PR — Ordem dos Advogados do Brasil, Seção do Paraná</p>
-                            <p class="leading-relaxed">Peticionamento, realização de audiências, mutirões, plantões e acompanhamentos processuais mediante intimações.</p>
+                            <p class="italic text-sm">OAB/PR, Ordem dos Advogados do Brasil, Seção do Paraná</p>
                         </div>
                     </li>
-                    <li class="flex items-start gap-6 reveal">
-                        <div class="tl-dot"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></div>
+                    <li class="flex items-start gap-6">
+                        <div class="tl-dot"><svg class="icon" aria-hidden="true"><use href="#i-scale-balanced"/></svg></div>
                         <div class="card p-6 w-full">
-                            <p class="tl-year mb-1">2023 — 2024</p>
-                            <h3 class="text-2xl font-semibold">Advogada Plena</h3>
+                            <p class="tl-year mb-1">2023 – 2024</p>
+                            <h3 class="text-2xl font-semibold">Advogada plena</h3>
                             <p class="italic text-sm mb-2">Custódio Advocacia e Consultoria</p>
                             <p class="leading-relaxed">Atuação nas áreas cível, criminal e trabalhista, da fase inicial à recursal, com elaboração de peças de baixa, média e alta complexidade.</p>
                         </div>
                     </li>
-                    <li class="flex items-start gap-6 reveal">
-                        <div class="tl-dot"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></div>
+                    <li class="flex items-start gap-6">
+                        <div class="tl-dot"><svg class="icon" aria-hidden="true"><use href="#i-scale-balanced"/></svg></div>
                         <div class="card p-6 w-full">
-                            <p class="tl-year mb-1">2020 — PRESENTE</p>
-                            <h3 class="text-2xl font-semibold">Defensora Dativa</h3>
-                            <p class="italic text-sm mb-2">OAB/PR — Ordem dos Advogados do Brasil, Seção do Paraná</p>
+                            <p class="tl-year mb-1">2020 – atual</p>
+                            <h3 class="text-2xl font-semibold">Defensora dativa</h3>
+                            <p class="italic text-sm mb-2">OAB/PR, Ordem dos Advogados do Brasil, Seção do Paraná</p>
                             <p class="leading-relaxed">Peticionamento, realização de audiências, mutirões, plantões e acompanhamentos processuais mediante intimações.</p>
                             <p class="leading-relaxed mt-2">Atuação nas áreas de Direito Criminal e Direito de Família, incluindo audiências de mediação junto ao Cejusc.</p>
                             <p class="leading-relaxed mt-2">Atualmente atuo nas comarcas de Araucária, Lapa e Fazenda Rio Grande, e já atuei também em Campo Largo.</p>
                         </div>
                     </li>
-                    <li class="flex items-start gap-6 reveal">
-                        <div class="tl-dot"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></div>
+                    <li class="flex items-start gap-6">
+                        <div class="tl-dot"><svg class="icon" aria-hidden="true"><use href="#i-scale-balanced"/></svg></div>
                         <div class="card p-6 w-full">
-                            <p class="tl-year mb-1">2019 — PRESENTE</p>
+                            <p class="tl-year mb-1">2019 – atual</p>
                             <h3 class="text-2xl font-semibold">Advogada</h3>
                             <p class="italic text-sm mb-2">Autônoma</p>
                             <p class="leading-relaxed">Atuante nas áreas de Direito Civil, Criminal e Previdenciário, com elaboração de contratos, pareceres e assessoria jurídica.</p>
                         </div>
                     </li>
-                    <li class="flex items-start gap-6 reveal">
-                        <div class="tl-dot"><i class="fa-solid fa-landmark" aria-hidden="true"></i></div>
+                    <li class="flex items-start gap-6">
+                        <div class="tl-dot"><svg class="icon" aria-hidden="true"><use href="#i-landmark"/></svg></div>
                         <div class="card p-6 w-full">
-                            <p class="tl-year mb-1">2017 — 2018</p>
+                            <p class="tl-year mb-1">2017 – 2018</p>
                             <h3 class="text-2xl font-semibold">Estagiária de Direito</h3>
-                            <p class="italic text-sm mb-2">Tribunal Regional do Trabalho da Nona Região</p>
+                            <p class="italic text-sm mb-2">Tribunal Regional do Trabalho da 9ª&nbsp;Região</p>
                             <p class="leading-relaxed">Remessa de autos ao arquivo, controle e verificação de ARs (avisos de recebimento) de intimações para audiências e consultas ao Bacen, Serasa e SPC.</p>
                         </div>
                     </li>
-                    <li class="flex items-start gap-6 reveal">
-                        <div class="tl-dot"><i class="fa-solid fa-credit-card" aria-hidden="true"></i></div>
+                    <li class="flex items-start gap-6">
+                        <div class="tl-dot"><svg class="icon" aria-hidden="true"><use href="#i-credit-card"/></svg></div>
                         <div class="card p-6 w-full">
-                            <p class="tl-year mb-1">2016 — 2017</p>
-                            <h3 class="text-2xl font-semibold">Auxiliar Administrativa — Setor Financeiro</h3>
+                            <p class="tl-year mb-1">2016 – 2017</p>
+                            <h3 class="text-2xl font-semibold">Auxiliar administrativa, setor financeiro</h3>
                             <p class="italic text-sm mb-2">Blindafort Montagem e Soldagem Ltda.</p>
                             <p class="leading-relaxed">Atividades de apoio financeiro: contas a pagar, lançamento de notas fiscais, controle de pedidos e acompanhamento das licitações de vendas para os Correios e a Caixa Econômica Federal.</p>
                             <p class="leading-relaxed mt-2">Acompanhamento de processos trabalhistas junto ao escritório de advocacia terceirizado.</p>
                         </div>
                     </li>
-                    <li class="flex items-start gap-6 reveal">
-                        <div class="tl-dot"><i class="fa-solid fa-house" aria-hidden="true"></i></div>
+                    <li class="flex items-start gap-6">
+                        <div class="tl-dot"><svg class="icon" aria-hidden="true"><use href="#i-house"/></svg></div>
                         <div class="card p-6 w-full">
-                            <p class="tl-year mb-1">2010 — 2014</p>
-                            <h3 class="text-2xl font-semibold">Auxiliar Administrativa — Setor de Locação</h3>
+                            <p class="tl-year mb-1">2010 – 2014</p>
+                            <h3 class="text-2xl font-semibold">Auxiliar administrativa, setor de locação</h3>
                             <p class="italic text-sm mb-2">Imobiliária Barracão</p>
                             <p class="leading-relaxed">Iniciei no setor financeiro, em contas a pagar e a receber, e depois fui transferida para o setor de locação de imóveis, onde realizava a análise documental e a elaboração de contratos de locação.</p>
                             <p class="leading-relaxed mt-2">Esporadicamente, participava de plantões de vendas e dos Feirões da Caixa, comercializando empreendimentos parceiros.</p>
                         </div>
                     </li>
-                    <li class="flex items-start gap-6 reveal">
-                        <div class="tl-dot"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></div>
+                    <li class="flex items-start gap-6">
+                        <div class="tl-dot"><svg class="icon" aria-hidden="true"><use href="#i-scale-balanced"/></svg></div>
                         <div class="card p-6 w-full">
-                            <p class="tl-year mb-1">2010 — 2014</p>
-                            <h3 class="text-2xl font-semibold">Assistente Jurídica</h3>
+                            <p class="tl-year mb-1">2010 – 2014</p>
+                            <h3 class="text-2xl font-semibold">Assistente jurídica</h3>
                             <p class="italic text-sm mb-2">Belafronte Advocacia</p>
                             <p class="leading-relaxed">Verificação e acompanhamento de processos.</p>
                             <p class="leading-relaxed mt-2">Atendimento a clientes, elaboração de relatórios e cálculos simples, organização de arquivo, operação do sistema CPJ e apoio geral às atividades jurídicas.</p>
@@ -244,19 +274,15 @@
              Os itens são configurados em data/conteudos.json (editável pelo painel Pages CMS) -->
         <section id="conteudos" class="section-dark py-24 md:py-32">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-16 reveal">
-                    <p class="eyebrow mb-3">Informação jurídica</p>
-                    <h2 class="text-4xl md:text-5xl font-semibold mb-5">Conteúdos</h2>
-                    <div class="ornament"><img src="./img/monograma-ouro.png" alt="" width="710" height="236" class="ornament-logo"></div>
-                </div>
+                <h2 class="titulo-secao text-4xl md:text-5xl font-semibold text-center mb-16">Conteúdos</h2>
 
                 <div id="bloco-videos" class="max-w-6xl mx-auto mb-16 hidden">
-                    <h3 class="on-dark text-2xl font-semibold mb-6 flex items-center gap-3"><i class="fa-brands fa-youtube text-[var(--gold)]" aria-hidden="true"></i> Vídeos</h3>
+                    <h3 class="on-dark text-2xl font-semibold mb-6 flex items-center gap-3"><svg class="icon text-[var(--gold)]" aria-hidden="true"><use href="#i-youtube"/></svg> Vídeos</h3>
                     <div id="lista-videos" class="grid md:grid-cols-2 gap-8"></div>
                 </div>
 
                 <div id="bloco-redes" class="max-w-6xl mx-auto hidden">
-                    <h3 class="on-dark text-2xl font-semibold mb-6 flex items-center gap-3"><i class="fa-solid fa-share-nodes text-[var(--gold)]" aria-hidden="true"></i> Nas redes sociais</h3>
+                    <h3 class="on-dark text-2xl font-semibold mb-6 flex items-center gap-3"><svg class="icon text-[var(--gold)]" aria-hidden="true"><use href="#i-share-nodes"/></svg> Nas redes sociais</h3>
                     <div id="lista-redes" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 items-start"></div>
                 </div>
 
@@ -272,38 +298,34 @@
         <!-- Contato -->
         <section id="contato" class="section-dark photo-band foto-tribunal py-24 md:py-32">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-16 reveal">
-                    <p class="eyebrow mb-3">Fale comigo</p>
-                    <h2 class="text-4xl md:text-5xl font-semibold mb-5">Contato</h2>
-                    <div class="ornament"><img src="./img/monograma-ouro.png" alt="" width="710" height="236" class="ornament-logo"></div>
-                </div>
+                <h2 class="titulo-secao text-4xl md:text-5xl font-semibold text-center mb-16">Contato</h2>
                 <div class="max-w-6xl mx-auto grid lg:grid-cols-5 gap-8 items-start">
                     <!-- Canais diretos -->
                     <div class="lg:col-span-2 grid sm:grid-cols-2 lg:grid-cols-1 gap-4">
-                        <a href="https://api.whatsapp.com/send/?phone=5541997098729&text=Ol%C3%A1%21+Tenho+interesse+nos+seus+servi%C3%A7os+jur%C3%ADdicos.+Poderia+me+passar+mais+informa%C3%A7%C3%B5es%3F&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="card contact-link reveal">
-                            <span class="card-icon contact-icon"><i class="fa-brands fa-whatsapp text-xl" aria-hidden="true"></i></span>
-                            <span><span class="block font-heading text-xl font-semibold text-[var(--ink)]">WhatsApp</span><span class="text-sm">(41) 99709-8729</span></span>
+                        <a href="https://api.whatsapp.com/send/?phone=5541997098729&text=Ol%C3%A1%21+Tenho+interesse+nos+seus+servi%C3%A7os+jur%C3%ADdicos.+Poderia+me+passar+mais+informa%C3%A7%C3%B5es%3F&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="card contact-link">
+                            <span class="card-icon contact-icon"><svg class="icon text-xl" aria-hidden="true"><use href="#i-whatsapp"/></svg></span>
+                            <span><span class="block font-heading text-xl font-semibold text-[var(--ink)]">WhatsApp</span><span class="text-sm whitespace-nowrap">(41) 99709-8729</span></span>
                         </a>
-                        <a href="mailto:fweber.adv@gmail.com" class="card contact-link reveal">
-                            <span class="card-icon contact-icon"><i class="fa-solid fa-envelope text-xl" aria-hidden="true"></i></span>
+                        <a href="mailto:fweber.adv@gmail.com" class="card contact-link">
+                            <span class="card-icon contact-icon"><svg class="icon text-xl" aria-hidden="true"><use href="#i-envelope"/></svg></span>
                             <span class="min-w-0"><span class="block font-heading text-xl font-semibold text-[var(--ink)]">E-mail</span><span class="text-sm break-all">fweber.adv@gmail.com</span></span>
                         </a>
-                        <a href="https://www.instagram.com/fran.weber/" target="_blank" rel="noopener noreferrer" class="card contact-link reveal">
-                            <span class="card-icon contact-icon"><i class="fa-brands fa-instagram text-xl" aria-hidden="true"></i></span>
+                        <a href="https://www.instagram.com/fran.weber/" target="_blank" rel="noopener noreferrer" class="card contact-link">
+                            <span class="card-icon contact-icon"><svg class="icon text-xl" aria-hidden="true"><use href="#i-instagram"/></svg></span>
                             <span><span class="block font-heading text-xl font-semibold text-[var(--ink)]">Instagram</span><span class="text-sm">@fran.weber</span></span>
                         </a>
-                        <a href="https://www.linkedin.com/in/fweberadv/" target="_blank" rel="noopener noreferrer" class="card contact-link reveal">
-                            <span class="card-icon contact-icon"><i class="fa-brands fa-linkedin-in text-xl" aria-hidden="true"></i></span>
+                        <a href="https://www.linkedin.com/in/fweberadv/" target="_blank" rel="noopener noreferrer" class="card contact-link">
+                            <span class="card-icon contact-icon"><svg class="icon text-xl" aria-hidden="true"><use href="#i-linkedin-in"/></svg></span>
                             <span><span class="block font-heading text-xl font-semibold text-[var(--ink)]">LinkedIn</span><span class="text-sm">Francieli S. L. Weber</span></span>
                         </a>
                     </div>
 
                     <!-- Formulário de contato por e-mail (enviado via FormSubmit para fweber.adv@gmail.com) -->
-                    <form id="form-contato" class="lg:col-span-3 card p-7 md:p-9 reveal" action="https://formsubmit.co/fweber.adv@gmail.com" method="POST">
+                    <form id="form-contato" class="lg:col-span-3 card p-7 md:p-9" action="https://formsubmit.co/fweber.adv@gmail.com" method="POST">
                         <h3 class="text-3xl font-semibold mb-1">Envie uma mensagem</h3>
                         <p class="text-sm mb-6">Retorno pelo e-mail ou telefone informado. Campos com * são obrigatórios.</p>
 
-                        <input type="hidden" name="_subject" value="Novo contato pelo site — Francieli Weber Advocacia">
+                        <input type="hidden" name="_subject" value="Novo contato pelo site: Francieli Weber Advocacia">
                         <input type="hidden" name="_template" value="table">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_next" value="https://guilherme-weber.github.io/weberadveconsultoria/#contato">
@@ -316,11 +338,11 @@
                             </label>
                             <label class="field">
                                 <span>Telefone / WhatsApp</span>
-                                <input type="tel" name="telefone" autocomplete="tel" maxlength="30" placeholder="(41) 90000-0000">
+                                <input type="tel" name="telefone" autocomplete="tel" inputmode="tel" maxlength="30" placeholder="(41) 90000-0000">
                             </label>
                             <label class="field sm:col-span-2">
                                 <span>E-mail *</span>
-                                <input type="email" name="email" required autocomplete="email" maxlength="160">
+                                <input type="email" name="email" required autocomplete="email" spellcheck="false" maxlength="160">
                             </label>
                             <label class="field sm:col-span-2">
                                 <span>Assunto</span>
@@ -339,13 +361,13 @@
                             </label>
                         </div>
 
-                        <label class="flex items-start gap-3 text-sm mt-5">
+                        <label class="flex items-start gap-3 text-sm mt-5 cursor-pointer">
                             <input type="checkbox" name="consentimento" value="Sim" required class="mt-1 accent-[var(--forest-700)]">
                             <span>Autorizo o uso dos meus dados apenas para retorno deste contato, conforme a LGPD.</span>
                         </label>
 
-                        <button type="submit" class="btn-gold w-full sm:w-auto mt-6 py-3 px-8 rounded-sm font-bold text-sm tracking-widest uppercase">
-                            <i class="fa-solid fa-paper-plane mr-2" aria-hidden="true"></i>Enviar mensagem
+                        <button type="submit" class="btn-gold w-full sm:w-auto mt-6 py-3 px-8 rounded-sm font-bold tracking-wide inline-flex items-center justify-center gap-2">
+                            <svg class="icon" aria-hidden="true"><use href="#i-paper-plane"/></svg>Enviar mensagem
                         </button>
                         <p id="form-status" class="text-sm mt-4 hidden" role="status" aria-live="polite"></p>
                     </form>
@@ -356,20 +378,20 @@
 
     <footer class="section-dark" style="background-color: var(--forest-900);">
         <div class="container mx-auto py-12 px-6 text-center">
-            <img src="./img/logo-marfim.png" alt="Francieli Weber — Advocacia e Consultoria Jurídica — OAB/PR 99.852" width="735" height="438" loading="lazy" class="h-28 md:h-32 w-auto mx-auto mb-6 opacity-90">
+            <img src="./img/logo-marfim.png" alt="Francieli Weber, Advocacia e Consultoria Jurídica, OAB/PR 99.852" width="735" height="438" loading="lazy" class="h-28 md:h-32 w-auto mx-auto mb-6 opacity-90">
             <div class="flex justify-center gap-6 text-xl mb-6">
-                <a href="https://api.whatsapp.com/send/?phone=5541997098729" target="_blank" rel="noopener noreferrer" class="text-[var(--gold-light)] hover:text-white transition-colors" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/fran.weber/" target="_blank" rel="noopener noreferrer" class="text-[var(--gold-light)] hover:text-white transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-                <a href="https://www.linkedin.com/in/fweberadv/" target="_blank" rel="noopener noreferrer" class="text-[var(--gold-light)] hover:text-white transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
-                <a href="mailto:fweber.adv@gmail.com" class="text-[var(--gold-light)] hover:text-white transition-colors" aria-label="E-mail"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=5541997098729" target="_blank" rel="noopener noreferrer" class="footer-icon" aria-label="WhatsApp"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg></a>
+                <a href="https://www.instagram.com/fran.weber/" target="_blank" rel="noopener noreferrer" class="footer-icon" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a>
+                <a href="https://www.linkedin.com/in/fweberadv/" target="_blank" rel="noopener noreferrer" class="footer-icon" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#i-linkedin-in"/></svg></a>
+                <a href="mailto:fweber.adv@gmail.com" class="footer-icon" aria-label="E-mail"><svg class="icon" aria-hidden="true"><use href="#i-envelope"/></svg></a>
             </div>
-            <p class="text-sm text-[#cfc6b3]">&copy; <span id="year">2025</span> Francieli dos Santos da Luz Weber · OAB/PR 99.852. Todos os direitos reservados.</p>
+            <p class="text-sm text-[#cfc6b3]">&copy; <span id="year">2026</span> Francieli dos Santos da Luz Weber<br>OAB/PR&nbsp;99.852. Todos os direitos reservados.</p>
         </div>
     </footer>
 
     <!-- Botão flutuante do WhatsApp -->
     <a href="https://api.whatsapp.com/send/?phone=5541997098729&text=Ol%C3%A1%21+Tenho+interesse+nos+seus+servi%C3%A7os+jur%C3%ADdicos.+Poderia+me+passar+mais+informa%C3%A7%C3%B5es%3F&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Conversar pelo WhatsApp">
-        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+        <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
     </a>
 
     <script src="./js/site.js"></script>

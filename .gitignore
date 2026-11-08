@@ -1,0 +1,16 @@
+node_modules/
+_site/
+
+# Ferramentas de IA e configurações locais do editor (não fazem parte do site)
+.agents/
+.claude/
+skills-lock.json
+CLAUDE.md
+AGENTS.md
+.cursor/
+.vscode/
+
+# Arquivos do sistema
+Thumbs.db
+Desktop.ini
+.DS_Store
